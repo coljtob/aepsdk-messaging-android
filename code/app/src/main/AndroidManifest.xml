@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
-        android:name=".MessagingApplication"
+        android:name="com.adobe.marketing.mobile.messagingsample.MessagingApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,9 +14,9 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".ThirdLevelActivity"
+            android:name="com.adobe.marketing.mobile.messagingsample.ThirdLevelActivity"
             android:exported="true"
-            android:parentActivityName=".SecondLevelActivity"
+            android:parentActivityName="com.adobe.marketing.mobile.messagingsample.SecondLevelActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -29,9 +29,9 @@
         </activity>
 
         <activity
-            android:name=".SecondLevelActivity"
+            android:name="com.adobe.marketing.mobile.messagingsample.SecondLevelActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.adobe.marketing.mobile.messagingsample.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -43,7 +43,7 @@
         </activity>
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.adobe.marketing.mobile.messagingsample.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
@@ -54,7 +54,7 @@
         </activity>
 
         <service
-            android:name=".NotificationService"
+            android:name="com.adobe.marketing.mobile.messagingsample.NotificationService"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
@@ -62,7 +62,7 @@
             </intent-filter>
         </service>
 
-        <receiver android:name=".NotificationBroadcastReceiver" />
+        <receiver android:name="com.adobe.marketing.mobile.messagingsample.NotificationBroadcastReceiver" />
     </application>
 
 </manifest>

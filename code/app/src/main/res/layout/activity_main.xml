@@ -6,7 +6,7 @@
     android:background="#C5C5CA"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context="com.adobe.marketing.mobile.messagingsample.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"

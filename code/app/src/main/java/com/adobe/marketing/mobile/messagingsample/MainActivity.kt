@@ -23,7 +23,6 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.os.SystemClock
-import android.provider.Settings
 import android.util.Log
 import android.webkit.WebView
 import android.widget.AdapterView
@@ -447,22 +446,22 @@ class MainActivity : ComponentActivity() {
         triggerValue = "bar"
         when (parent.getItemAtPosition(pos)) {
             generatedIAMSpinnerValues.BOTTOM_BANNER.value -> generateAndDispatchEdgeResponseEvent(
-                    generatedIAMParameters.BOTTOM_BANNER
+                generatedIAMParameters.BOTTOM_BANNER
             )
             generatedIAMSpinnerValues.CENTER_BANNER.value -> generateAndDispatchEdgeResponseEvent(
-                    generatedIAMParameters.CENTER_BANNER
+                generatedIAMParameters.CENTER_BANNER
             )
             generatedIAMSpinnerValues.CENTER_MODAL.value -> generateAndDispatchEdgeResponseEvent(
-                    generatedIAMParameters.CENTER_MODAL
+                generatedIAMParameters.CENTER_MODAL
             )
             generatedIAMSpinnerValues.TOP_BANNER.value -> generateAndDispatchEdgeResponseEvent(
-                    generatedIAMParameters.TOP_BANNER
+                generatedIAMParameters.TOP_BANNER
             )
             generatedIAMSpinnerValues.TOP_HALF.value -> generateAndDispatchEdgeResponseEvent(
-                    generatedIAMParameters.TOP_HALF
+                generatedIAMParameters.TOP_HALF
             )
             generatedIAMSpinnerValues.BOTTOM_HALF.value -> generateAndDispatchEdgeResponseEvent(
-                    generatedIAMParameters.BOTTOM_HALF
+                generatedIAMParameters.BOTTOM_HALF
             )
         }
     }
@@ -494,7 +493,7 @@ class MainActivity : ComponentActivity() {
             Messaging.addPushTrackingDetails(
                     this,
                     "messageId",
-                    NotificationBroadcastReceiver.XDM_DATA
+                NotificationBroadcastReceiver.XDM_DATA
             )
         }
         val pendingIntent: PendingIntent = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -502,7 +501,8 @@ class MainActivity : ComponentActivity() {
         } else {
             PendingIntent.getBroadcast(this, System.currentTimeMillis().toInt(), actionReceiver, PendingIntent.FLAG_UPDATE_CURRENT)
         }
-        builder.addAction(R.drawable.ic_launcher_background, "buttonAction",
+        builder.addAction(
+            R.drawable.ic_launcher_background, "buttonAction",
                 pendingIntent)
         return builder.build()
     }
