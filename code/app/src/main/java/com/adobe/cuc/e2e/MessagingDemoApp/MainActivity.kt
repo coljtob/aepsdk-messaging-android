@@ -23,7 +23,6 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.os.SystemClock
-import android.provider.Settings
 import android.util.Log
 import android.webkit.WebView
 import android.widget.AdapterView
@@ -34,6 +33,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
+import com.adobe.cuc.e2e.MessagingDemoApp.NotificationBroadcastReceiver
 import com.adobe.marketing.mobile.Event
 import com.adobe.marketing.mobile.Message
 import com.adobe.marketing.mobile.Messaging

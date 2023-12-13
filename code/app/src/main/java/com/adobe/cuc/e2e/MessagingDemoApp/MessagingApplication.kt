@@ -39,7 +39,7 @@ class MessagingApplication : Application() {
         super.onCreate()
         MobileCore.setApplication(this)
         MobileCore.setLogLevel(LoggingMode.VERBOSE)
-        Assurance.startSession(ASSURANCE_SESSION_ID)
+        // Assurance.startSession(ASSURANCE_SESSION_ID)
         MobileCore.configureWithAppID(ENVIRONMENT_FILE_ID)
 
         val extensions = listOf(

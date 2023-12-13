@@ -8,7 +8,7 @@
   OF ANY KIND, either express or implied. See the License for the specific language
   governing permissions and limitations under the License.
 */
-package com.adobe.marketing.mobile.messagingsample
+package com.adobe.cuc.e2e.MessagingDemoApp
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -19,6 +19,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import com.adobe.marketing.mobile.Messaging
+import com.adobe.marketing.mobile.messagingsample.MainActivity
 
 
 class NotificationBroadcastReceiver : BroadcastReceiver() {

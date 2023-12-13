@@ -15,9 +15,8 @@ package com.adobe.marketing.mobile.messagingsample
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import androidx.activity.ComponentActivity
-import com.adobe.marketing.mobile.edge.identity.Identity
+import com.adobe.cuc.e2e.MessagingDemoApp.ThirdLevelActivity
 
 class SecondLevelActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

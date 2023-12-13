@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".ThirdLevelActivity"
+            android:name="com.adobe.cuc.e2e.MessagingDemoApp.ThirdLevelActivity"
             android:exported="true"
             android:parentActivityName=".SecondLevelActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -62,7 +62,7 @@
             </intent-filter>
         </service>
 
-        <receiver android:name=".NotificationBroadcastReceiver" />
+        <receiver android:name="com.adobe.cuc.e2e.MessagingDemoApp.NotificationBroadcastReceiver" />
     </application>
 
 </manifest>
