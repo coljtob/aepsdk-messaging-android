@@ -10,7 +10,7 @@
   governing permissions and limitations under the License.
  */
 
-package com.adobe.marketing.mobile.messagingsample
+package com.adobe.cuc.e2e.MessagingDemoApp
 
 import android.content.Intent
 import android.os.Bundle

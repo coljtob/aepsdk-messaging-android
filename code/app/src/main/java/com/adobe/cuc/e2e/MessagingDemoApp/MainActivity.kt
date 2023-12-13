@@ -9,7 +9,7 @@
  governing permissions and limitations under the License.
  */
 
-package com.adobe.marketing.mobile.messagingsample
+package com.adobe.cuc.e2e.MessagingDemoApp
 
 import android.Manifest
 import android.app.AlarmManager
@@ -543,7 +543,7 @@ class MainActivity : ComponentActivity() {
                         "    \"correlationID\" : \"e34d32f4-16ab-440a-91f6-c681dfb8c5bd\",\n" +
                         "    \"decisionProvider\" : \"AJO\"\n" +
                         "  },\n" +
-                        "  \"scope\" : \"mobileapp://com.adobe.marketing.mobile.messagingsample\",\n" +
+                        "  \"scope\" : \"mobileapp://com.adobe.cuc.e2e.MessagingDemoApp\",\n" +
                         "  \"items\": [\n" +
                         "    {\n" +
                         "      \"id\": \"8649aa56-ad0e-47d3-b0e6-8214ad032620\",\n" +

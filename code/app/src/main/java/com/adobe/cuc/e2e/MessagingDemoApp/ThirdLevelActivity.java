@@ -15,7 +15,7 @@ package com.adobe.cuc.e2e.MessagingDemoApp;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.adobe.marketing.mobile.messagingsample.R;
+import com.adobe.cuc.e2e.MessagingDemoApp.R;
 
 public class ThirdLevelActivity extends AppCompatActivity {
 
