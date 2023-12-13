@@ -9,18 +9,9 @@
  governing permissions and limitations under the License.
  */
 
-package com.adobe.cuc.e2e.MessagingDemoApp
+package com.adobe.cuc.e2e.messagingdemoapp
 
-import android.Manifest
-import android.app.AlertDialog
 import android.app.Application
-import android.content.DialogInterface
-import android.os.Build
-import android.os.CountDownTimer
-import android.os.Handler
-import android.os.Looper
-import android.widget.Toast
-import kotlin.concurrent.timer
 import com.adobe.marketing.mobile.Assurance
 import com.adobe.marketing.mobile.Edge
 import com.adobe.marketing.mobile.LoggingMode
@@ -28,13 +19,11 @@ import com.adobe.marketing.mobile.Messaging
 import com.adobe.marketing.mobile.MobileCore
 import com.adobe.marketing.mobile.edge.identity.Identity
 import com.google.firebase.messaging.FirebaseMessaging
-import java.util.Timer
-import java.util.TimerTask
 
 
 class MessagingApplication : Application() {
-    private val ENVIRONMENT_FILE_ID = "3149c49c3910/afbd4e5232c5/launch-cf9ec24f55ed-development"
-    private val ASSURANCE_SESSION_ID = "messagingdemo://foo?adb_validation_sessionid=248cbbdf-71cb-417e-9b1c-746fb4d59190"
+    private val ENVIRONMENT_FILE_ID = "bf7248f92b53/caf1bf1baeb1/launch-2ccf360c056d-development"
+    private val ASSURANCE_SESSION_ID = "messagingdemo://foo?adb_validation_sessionid=71ae2ff9-9d35-4877-973a-0cab33e716d8"
     override fun onCreate() {
         super.onCreate()
         MobileCore.setApplication(this)

@@ -10,13 +10,12 @@
   governing permissions and limitations under the License.
  */
 
-package com.adobe.cuc.e2e.MessagingDemoApp
+package com.adobe.cuc.e2e.messagingdemoapp
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.ComponentActivity
-import com.adobe.cuc.e2e.MessagingDemoApp.ThirdLevelActivity
 
 class SecondLevelActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -10,12 +10,12 @@
   governing permissions and limitations under the License.
  */
 
-package com.adobe.cuc.e2e.MessagingDemoApp;
+package com.adobe.cuc.e2e.messagingdemoapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.adobe.cuc.e2e.MessagingDemoApp.R;
+import com.adobe.cuc.e2e.messagingdemoapp.R;
 
 public class ThirdLevelActivity extends AppCompatActivity {
 

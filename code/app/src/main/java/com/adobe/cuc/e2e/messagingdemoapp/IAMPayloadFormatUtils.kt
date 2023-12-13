@@ -8,7 +8,7 @@
   OF ANY KIND, either express or implied. See the License for the specific language
   governing permissions and limitations under the License.
 */
-package com.adobe.cuc.e2e.MessagingDemoApp
+package com.adobe.cuc.e2e.messagingdemoapp
 
 import org.json.JSONArray
 import org.json.JSONException

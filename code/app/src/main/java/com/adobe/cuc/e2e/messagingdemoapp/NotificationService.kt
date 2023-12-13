@@ -9,7 +9,7 @@
  governing permissions and limitations under the License.
  */
 
-package com.adobe.cuc.e2e.MessagingDemoApp
+package com.adobe.cuc.e2e.messagingdemoapp
 
 import com.adobe.marketing.mobile.MobileCore
 import com.google.firebase.messaging.FirebaseMessagingService
