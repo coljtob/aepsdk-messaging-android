@@ -22,7 +22,7 @@ import com.google.firebase.messaging.FirebaseMessaging
 
 
 class MessagingApplication : Application() {
-    private val ENVIRONMENT_FILE_ID = "3269cfd2f1f9/bf87ecce10d2/launch-f2391ecada3e-development"
+    private val ENVIRONMENT_FILE_ID = "ab2e6fae6a3f/841c17e0e3e2/launch-3a485b2b5596-development"
     private val ASSURANCE_SESSION_ID = "messagingdemo://foo?adb_validation_sessionid=71ae2ff9-9d35-4877-973a-0cab33e716d8"
     override fun onCreate() {
         super.onCreate()
