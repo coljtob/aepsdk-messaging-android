@@ -20,6 +20,23 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        // add the code from below line
+        applicationVariants.all{
+                // this method is use to rename your all apk weather
+                // it may be signed or unsigned(debug apk)
+            variant ->
+                variant.outputs.each{
+                        // on below line we are setting
+                        // a name to our apk as GFG.apk
+                    output->
+                        // on below line we are adding version name to
+                        // our .apk file along with the app name
+                        def name = "can2.apk"
+                        // on below line we are setting the
+                        // outputFile Name to our apk file
+                        output.outputFileName = name
+                }
+        }
     }
     namespace 'com.adobe.cuc.e2e.messagingdemoapp'
 }
