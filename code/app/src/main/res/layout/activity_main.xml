@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Messaging Sample App from Collin" />
 
+
     <Button
         android:id="@+id/btnGetLocalNotification"
         android:layout_width="wrap_content"
@@ -49,6 +50,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="refresh in app messages" />
+
+    <Button
+        android:id="@+id/btnSetLaunchId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trigger to set Launch ID" />
 
     <Button
         android:id="@+id/btnHistoricalEvent1"
@@ -95,5 +102,11 @@
         android:text="ecid should appear here after button click"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/addLaunchId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="add launch ID here" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

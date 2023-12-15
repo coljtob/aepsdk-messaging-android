@@ -24,6 +24,7 @@ import android.os.Build
 import android.os.Bundle
 import android.os.SystemClock
 import android.util.Log
+import android.view.inputmethod.InputMethodManager
 import android.webkit.WebView
 import android.widget.AdapterView
 import android.widget.Spinner
@@ -43,6 +44,7 @@ import com.adobe.marketing.mobile.services.MessagingDelegate
 import com.adobe.marketing.mobile.services.ui.FullscreenMessage
 import com.adobe.marketing.mobile.util.StringUtils
 import com.google.firebase.messaging.FirebaseMessaging
+import kotlinx.android.synthetic.main.activity_main.addLaunchId
 import kotlinx.android.synthetic.main.activity_main.allowIAMSwitch
 import kotlinx.android.synthetic.main.activity_main.btnCheckSequence
 import kotlinx.android.synthetic.main.activity_main.btnGetLocalNotification
@@ -50,6 +52,7 @@ import kotlinx.android.synthetic.main.activity_main.btnHistoricalEvent1
 import kotlinx.android.synthetic.main.activity_main.btnHistoricalEvent2
 import kotlinx.android.synthetic.main.activity_main.btnHistoricalEvent3
 import kotlinx.android.synthetic.main.activity_main.btnRefreshInAppMessages
+import kotlinx.android.synthetic.main.activity_main.btnSetLaunchId
 import kotlinx.android.synthetic.main.activity_main.btnTriggerFullscreenIAM
 import kotlinx.android.synthetic.main.activity_main.btnTriggerLastIAM
 import kotlinx.android.synthetic.main.activity_main.btn_detailpage
@@ -313,6 +316,21 @@ class MainActivity : ComponentActivity() {
                 MobileCore.trackAction("samus", null)
             } else {
                 MobileCore.trackAction(trigger, null)
+            }
+        }
+
+        btnSetLaunchId.setOnClickListener {
+            val launchId = addLaunchId.text.toString()
+            if (StringUtils.isNullOrEmpty(launchId)) {
+                Toast.makeText(
+                    this@MainActivity, "Please enter launchId.",
+                    Toast.LENGTH_SHORT
+                ).show()
+            } else {
+                val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.hideSoftInputFromWindow(editText.windowToken, 0)
+                addLaunchId.clearFocus();
+                MobileCore.configureWithAppID(launchId)
             }
         }
 
