@@ -268,6 +268,12 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         MobileCore.setMessagingDelegate(customMessagingDelegate)
+
+        val data = HashMap<String, Any>()
+        data["edge.environment"] = "int"
+        // uncomment below for staging
+        // MobileCore.updateConfiguration(data)
+
         // val id: String = Settings.Secure.getString(contentResolver, Settings.Secure.ANDROID_ID)
         // check if I can get id
 
