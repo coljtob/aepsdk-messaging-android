@@ -276,7 +276,9 @@ class MainActivity : ComponentActivity() {
 
         // val id: String = Settings.Secure.getString(contentResolver, Settings.Secure.ANDROID_ID)
         // check if I can get id
-
+        // val data = HashMap<String, Any>()
+        // data["edge.environment"] = "stage"
+        // MobileCore.updateConfiguration(data)
 
 
         // setup ui interaction listeners

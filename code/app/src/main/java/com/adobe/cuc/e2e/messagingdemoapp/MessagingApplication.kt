@@ -22,8 +22,15 @@ import com.google.firebase.messaging.FirebaseMessaging
 
 
 class MessagingApplication : Application() {
-    private val ENVIRONMENT_FILE_ID = "staging/1b50a869c4a2/1e0176ee1f5c/launch-184738729970-development"
-    private val ASSURANCE_SESSION_ID = "messagingdemo://foo?adb_validation_sessionid=d8cbaf45-fcae-4e2f-af59-0b171027bce6&env=qa"
+    // STAGE
+    // private val ENVIRONMENT_FILE_ID = "staging/1b50a869c4a2/1e0176ee1f5c/launch-184738729970-development"
+    // private val ASSURANCE_SESSION_ID = "messagingdemo://foo?adb_validation_sessionid=7cf970d4-e952-4011-9b6a-f9adc60a5784&env=qa"
+    // PROD
+    // private val ENVIRONMENT_FILE_ID = "3149c49c3910/84e9aaeba325/launch-f58d479d8188-development"
+    // private val ASSURANCE_SESSION_ID = "messagingdemo://foo?adb_validation_sessionid=fbdd9ca5-4163-4031-aba3-737126bea418"
+
+
+
     override fun onCreate() {
         super.onCreate()
         MobileCore.setApplication(this)
